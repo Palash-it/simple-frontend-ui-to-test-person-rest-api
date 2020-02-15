@@ -140,7 +140,7 @@
                         axios
                         .post(API_BASE_URL+'/persons',params,axiosConfig)
                         .then(response => {
-                            if(response.status === 200){
+                            if(response.status === 201){
                                 this.clearForm();
                                 this.successMsg = "Person data successfully created";
                                 if(!this.createAnother){
